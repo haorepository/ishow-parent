@@ -1,0 +1,20 @@
+server:
+  port: 8777
+  servlet:
+    context-path: /ishow-eureka
+spring:
+  application:
+    name: ishow-eureka-server
+eureka:
+  server:
+    #服务端打开自我保护模式，测试时调成false
+    enable-self-preservation: false
+  instance:
+    hostname: 127.0.0.1
+  client:
+    #关闭服务端的自我注册，如果不关闭启动报错
+    fetch-registry: false
+    register-with-eureka: false
+    #注册中心服务地址配置
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/${server.servlet.context-path}/eureka/

@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    config:
+      #git仓库版本分支
+      label: release
+      server:
+        git:
+          #https://github.com/ImHaozi/ishow-config-file.git
+          #https://github.com/ImHaozi/ishow-config-files.git
+          uri: https://github.com/ImHaozi/ishow-config-files.git
+          skip-ssl-validation: true
+          ignore-local-ssh-settings: true
+          #私有仓库配置下面三项,private-key可以不配置
+          #private-key:
+          #username: xxxxx
+          #password: xxxxx

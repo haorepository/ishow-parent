@@ -1,0 +1,32 @@
+server:
+  port: 8666
+    #配置中心不能配置该项否则需要从配置中心读取配置的服务无法找到配置中心
+    #servlet:
+      #context-path: /ishow-config
+spring:
+  application:
+    name: ishow-config
+  devtools:
+    #开启热加载
+    restart:
+      enabled: true
+      #指定热加载文件
+      additional-paths: src/main/java
+      #排除不需要热加载的文件
+      additional-exclude: static/**,templates/**,WEB-INF/**
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      #http://admin:wanghao@127.0.0.1:8777/ek-server/eureka/
+      #格式必须为defaultZone
+      defaultZone: http://127.0.0.1:8777/ishow-eureka/eureka/
+info:
+  app:
+    name: ishow-config
+  #company:
+    #name: www.amber.com
+  #build:
+    #artifactId: $artifactId$
+    #version: $version$
