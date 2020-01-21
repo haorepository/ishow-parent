@@ -45,7 +45,8 @@ public class CodeGenerator {
     public static void main(String[] args) {
         AutoGenerator mpg =   config();
         // List<String> l = Lists.newArrayList("dept_info","dept_user_info");
-        generate(mpg,"test_info");
+        generate(mpg,"t_user_detail","t_vip","t_vip_auth","t_vip_user",
+        "t_role","t_role_auth","t_auth","t_admin","t_admin_role");
     }
 
 
@@ -69,7 +70,7 @@ public class CodeGenerator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3306/sme?useSSL=false&serverTimezone=GMT%2B8&useSSL=false");
+        dsc.setUrl("jdbc:mysql://localhost:3306/ishow?useSSL=false&serverTimezone=GMT%2B8&useSSL=false");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
