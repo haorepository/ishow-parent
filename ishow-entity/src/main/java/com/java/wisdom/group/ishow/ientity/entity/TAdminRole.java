@@ -1,5 +1,7 @@
 package com.java.wisdom.group.ishow.ientity.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -25,6 +27,7 @@ public class TAdminRole implements Serializable {
     /**
      * 管理员角色表主键
      */
+    @TableId(value = "admin_role_id",type = IdType.AUTO)
     private Integer adminRoleId;
 
     /**

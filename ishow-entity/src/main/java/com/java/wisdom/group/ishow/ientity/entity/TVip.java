@@ -1,5 +1,7 @@
 package com.java.wisdom.group.ishow.ientity.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -25,6 +27,7 @@ public class TVip implements Serializable {
     /**
      * 会员ID
      */
+    @TableId(value = "vip_id",type = IdType.AUTO)
     private Integer vipId;
 
     /**
