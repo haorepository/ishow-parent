@@ -11,7 +11,7 @@
     <artifactId>ishow-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <name>ishow-gateway</name>
     <description>gateway</description>
