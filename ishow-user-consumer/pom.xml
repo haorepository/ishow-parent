@@ -11,14 +11,10 @@
     <artifactId>ishow-user-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <name>ishow-user-consumer</name>
     <description>java wisdom project</description>
-
-    <!--<properties>
-        <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
-    </properties>-->
 
     <dependencies>
         <dependency>
