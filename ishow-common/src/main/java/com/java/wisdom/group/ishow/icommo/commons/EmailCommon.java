@@ -1,10 +1,8 @@
 package com.java.wisdom.group.ishow.icommo.commons;
 
 import javax.mail.*;
-import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Properties;
 
@@ -51,9 +49,7 @@ public class EmailCommon {
             transport.sendMessage(message, message.getAllRecipients());
             // 关闭连接
             transport.close();
-        } catch (NoSuchProviderException e) {
-            e.printStackTrace();
-        } catch (MessagingException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -71,9 +67,7 @@ public class EmailCommon {
             message.setSentDate(new Date());
             //保存设置
             message.saveChanges();
-        } catch (AddressException e) {
-            e.printStackTrace();
-        } catch (MessagingException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return message;
