@@ -3,13 +3,6 @@ server:
   servlet:
     context-path: /ishow-eureka
 spring:
-  #security用户名密码配置
-  security: 
-    user: 
-      #登陆用户名
-      name: admin
-      #登陆密码 
-      password: admin
   application:
     name: ishow-eureka-server
 eureka:
