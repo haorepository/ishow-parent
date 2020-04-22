@@ -9,7 +9,7 @@ spring:
       #登陆用户名
       name: admin
       #登陆密码 
-      password: wanghao
+      password: admin
   application:
     name: ishow-eureka-server
 eureka:
