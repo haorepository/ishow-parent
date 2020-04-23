@@ -34,6 +34,7 @@
         <module>ishow-cache</module>
         <module>ishow-eureka</module>
         <module>ishow-config</module>
+        <module>ishow-config-files</module>
         <module>ishow-user-provider</module>
         <module>ishow-user-consumer</module>
         <module>ishow-common</module>
