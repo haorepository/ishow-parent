@@ -1,12 +1,18 @@
 spring:
   cloud:
     config:
+      username: admin
+      password: admin
       #指定配置文件版本
       #profile: dev
-      label: release
+      #label: dev
       #指定配置文件，当指定版本后那么配置文件格式必须为：名称-版本
       #如：ishow-user-provider-dev
-      name: ishow-user-provider,ishow-user-provider-database,mybatis-plus,redis
+      name:
+        application-ishow-user-provider,
+        application-ishow-database,
+        application-ishow-mybatis-plus,
+        application-ishow-redis
       #快速返回失败，用于提前返回读取配置文件结果
       fail-fast: true
       #指定配置中心路径
@@ -21,4 +27,4 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://127.0.0.1:8777/ishow-eureka/eureka/
+      defaultZone: http://admin:admin@127.0.0.1:8777/ishow-eureka/eureka/
