@@ -4,6 +4,10 @@ server:
     #servlet:
       #context-path: /ishow-config
 spring:
+  security:
+    user:
+      name: admin
+      password: admin
   application:
     name: ishow-config
   devtools:
