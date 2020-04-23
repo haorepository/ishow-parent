@@ -21,7 +21,7 @@ eureka:
     service-url:
       #http://admin:wanghao@127.0.0.1:8777/ek-server/eureka/
       #格式必须为defaultZone
-      defaultZone: http://127.0.0.1:8777/ishow-eureka/eureka/
+      defaultZone: http://admin:admin@127.0.0.1:8777/ishow-eureka/eureka/
 info:
   app:
     name: ishow-config

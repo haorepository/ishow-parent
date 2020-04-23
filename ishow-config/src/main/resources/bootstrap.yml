@@ -7,10 +7,12 @@ spring:
         git:
           #https://github.com/ImHaozi/ishow-config-file.git
           #https://github.com/ImHaozi/ishow-config-files.git
-          uri: https://github.com/ImHaozi/ishow-config-files.git
+          uri: https://github.com/ImHaozi/ishow-parent.git
+          search-paths: /ishow-config-files/src/main/resources/
           skip-ssl-validation: true
           ignore-local-ssh-settings: true
           #私有仓库配置下面三项,private-key可以不配置
           #private-key:
           #username: xxxxx
           #password: xxxxx
+          default-label: dev
