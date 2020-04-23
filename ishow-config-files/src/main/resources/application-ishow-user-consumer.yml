@@ -1,0 +1,12 @@
+server:
+  port: 8444
+  servlet:
+    context-path: /ishow-user-consumer
+spring:
+  #profiles:
+    #active: dev
+  application:
+    name: ishow-user-consumer
+info:
+  app:
+    name: ishow-user-consumer
