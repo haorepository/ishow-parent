@@ -4,12 +4,26 @@ server:
     #servlet:
       #context-path: /ishow-config
 spring:
+  application:
+    name: ishow-config
+  cloud:
+    bus:
+      #是否启用springcloud config bus
+      enabled: true
+      #开启跟踪总线事件
+      trace:
+        enabled: true
+  #mq配置
+  rabbitmq:
+    host: 192.168.0.76
+    port: 5672
+    username: admin
+    password: admin
+  #安全管理配置
   security:
     user:
       name: admin
       password: admin
-  application:
-    name: ishow-config
   devtools:
     #开启热加载
     restart:
@@ -26,6 +40,12 @@ eureka:
       #http://admin:wanghao@127.0.0.1:8777/ek-server/eureka/
       #格式必须为defaultZone
       defaultZone: http://admin:admin@127.0.0.1:8777/ishow-eureka/eureka/
+#SpringCloud暴露接口，暴露/bus/refresh接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
 info:
   app:
     name: ishow-config
