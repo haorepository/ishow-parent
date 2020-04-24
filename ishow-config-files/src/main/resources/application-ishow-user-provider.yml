@@ -17,14 +17,14 @@ spring:
       trace:
         enabled: true
       enabled: true
-    config:
+#    config:
 #      fail-fast: true
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://admin:admin@127.0.0.1:8777/ishow-eureka/eureka/
+#eureka:
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://admin:admin@127.0.0.1:8777/ishow-eureka/eureka/
 management:
   endpoints:
     web:
