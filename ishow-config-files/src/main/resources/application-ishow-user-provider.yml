@@ -7,10 +7,29 @@ spring:
     active: dev
   application:
     name: ishow-user-provider
-#management:
-  #server:
-    #servlet:
-      #context-path: /ishow-user-provider
+  rabbitmq:
+    host: 192.168.0.76
+    port: 5672
+    username: admin
+    password: admin
+  cloud:
+    bus:
+      trace:
+        enabled: true
+      enabled: true
+    config:
+#      fail-fast: true
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://admin:admin@127.0.0.1:8777/ishow-eureka/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
 mytest:
   test: some_test_1
 info:
