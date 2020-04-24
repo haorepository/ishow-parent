@@ -12,7 +12,7 @@ spring:
     #servlet:
       #context-path: /ishow-user-provider
 mytest:
-  test: some_test
+  test: some_test_1
 info:
   app:
     name: ishow-user-provider
