@@ -11,6 +11,8 @@ spring:
   #server:
     #servlet:
       #context-path: /ishow-user-provider
+mytest:
+  test: some
 info:
   app:
     name: ishow-user-provider
