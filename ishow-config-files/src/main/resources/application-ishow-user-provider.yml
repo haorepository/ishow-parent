@@ -34,7 +34,7 @@ management:
       exposure:
         include: refresh
 mytest:
-  test: some_test_2
+  test: some_test_3
 info:
   app:
     name: ishow-user-provider
