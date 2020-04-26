@@ -20,21 +20,13 @@ spring:
         enabled: true
       enabled: true
 #      id: ${vcap.application.name:${spring.application.name:application}}:${vcap.application.instance_index:${spring.profiles.active:${local.server.port:${server.port:0}}}}:${vcap.application.instance_id:${random.value}}
-#    config:
-#      fail-fast: true
-#eureka:
-#  client:
-#    fetch-registry: true
-#    register-with-eureka: true
-#    service-url:
-#      defaultZone: http://admin:admin@127.0.0.1:8777/ishow-eureka/eureka/
 management:
   endpoints:
     web:
       exposure:
         include: refresh
 mytest:
-  test: some_test_2
+  test: some_test_23
 info:
   app:
     name: ishow-user-provider
