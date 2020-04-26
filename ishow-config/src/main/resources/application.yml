@@ -13,6 +13,9 @@ spring:
       #开启跟踪总线事件
       trace:
         enabled: true
+      #开启自动刷新
+      refresh:
+        enabled: true
   #mq配置
   rabbitmq:
     host: 192.168.0.76
