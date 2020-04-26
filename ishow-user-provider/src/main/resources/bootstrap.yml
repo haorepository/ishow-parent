@@ -22,6 +22,12 @@ spring:
         enabled: true
         #配置中心注册到eureka的名称
         service-id: ishow-config
+#    bus:
+#      trace:
+#        enabled: true
+#      refresh:
+#        enabled: true
+#      enabled: true
 eureka:
   client:
     fetch-registry: true
