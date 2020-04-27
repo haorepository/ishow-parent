@@ -16,6 +16,7 @@ eureka:
   server:
     #服务端打开自我保护模式，测试时调成false
     enable-self-preservation: false
+#    eviction-interval-timer-in-ms: 3000
   instance:
     hostname: 127.0.0.1
   client:
