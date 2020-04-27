@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    config:
+      fail-fast: true
+      username: admin
+      password: admin
+      name:
+        application-ishow-redis
+      uri: http://127.0.0.1:8666
+      discovery:
+        enabled: true
+        service-id: ishow-config
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://admin:admin@127.0.0.1:8777/ishow-eureka/eureka/
