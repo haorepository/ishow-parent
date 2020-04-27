@@ -1,0 +1,22 @@
+server:
+  port: 7000
+  servlet:
+    context-path: /ishow-cache
+spring:
+  application:
+    name: ishow-cache
+  rabbitmq:
+    host: 192.168.0.76
+    port: 5672
+    username: admin
+    password: admin
+  cloud:
+    bus:
+      refresh:
+        enabled: true
+      trace:
+        enabled: true
+      enabled: true
+info:
+  app:
+    name: ishow-cache
