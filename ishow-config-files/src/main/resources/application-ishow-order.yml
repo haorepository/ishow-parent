@@ -27,4 +27,4 @@ management:
         include: refresh
 info:
   app:
-    name: ishow-user-provider
+    name: ishow-order
