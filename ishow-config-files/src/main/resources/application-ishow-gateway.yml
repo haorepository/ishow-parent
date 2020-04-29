@@ -3,12 +3,28 @@ server:
 spring:
   application:
     name: ishow-gateway
+  rabbitmq:
+    host: 192.168.0.76
+    port: 5672
+    username: admin
+    password: admin
   cloud:
+    bus:
+      refresh:
+        enabled: true
+      trace:
+        enabled: true
+      enabled: true
     gateway:
       discovery:
         locator:
         enabled: false
         lowerCaseServiceId: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
 # 关闭权限验证
 info:
   app:
