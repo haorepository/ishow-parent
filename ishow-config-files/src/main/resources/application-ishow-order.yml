@@ -1,0 +1,30 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /ishow-order
+spring:
+  profiles:
+    active: dev
+  application:
+    name: ishow-order
+  rabbitmq:
+    host: 192.168.0.76
+    port: 5672
+    username: admin
+    password: admin
+  cloud:
+    bus:
+      refresh:
+        enabled: true
+      trace:
+        enabled: true
+      enabled: true
+#      id: ${vcap.application.name:${spring.application.name:application}}:${vcap.application.instance_index:${spring.profiles.active:${local.server.port:${server.port:0}}}}:${vcap.application.instance_id:${random.value}}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+info:
+  app:
+    name: ishow-user-provider
