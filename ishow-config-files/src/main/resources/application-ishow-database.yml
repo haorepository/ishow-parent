@@ -8,3 +8,12 @@ spring:
       password: root
       driverClassName: com.mysql.cj.jdbc.Driver
       dbType: com.alibaba.druid.pool.DruidDataSource
+  cloud:
+    bus:
+      refresh:
+        enabled: true
+      trace:
+        enabled: true
+      enabled: true
+test:
+  test: test_1
