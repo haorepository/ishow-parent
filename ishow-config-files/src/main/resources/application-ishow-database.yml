@@ -3,17 +3,9 @@ spring:
     active: dev
   datasource:
     druid:
+      #如果连接数据库抛异常则在末尾加上：&allowPublicKeyRetrieval=true
       url: jdbc:mysql://localhost:3306/ishow?useSSL=false&serverTimezone=GMT%2B8&useSSL=false
       username: root
       password: root
       driverClassName: com.mysql.cj.jdbc.Driver
       dbType: com.alibaba.druid.pool.DruidDataSource
-  cloud:
-    bus:
-      refresh:
-        enabled: true
-      trace:
-        enabled: true
-      enabled: true
-test:
-  test: test_2
