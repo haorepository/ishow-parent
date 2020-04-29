@@ -24,7 +24,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: "*"
 mytest:
   test: some_test_11
 info:
