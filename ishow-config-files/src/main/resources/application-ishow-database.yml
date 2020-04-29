@@ -16,4 +16,4 @@ spring:
         enabled: true
       enabled: true
 test:
-  test: test_1
+  test: test_2
