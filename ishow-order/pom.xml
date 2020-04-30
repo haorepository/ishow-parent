@@ -8,12 +8,12 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>ishow-cache</artifactId>
+    <artifactId>ishow-order</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <packaging>jar</packaging>
 
-    <name>ishow-cache</name>
+    <name>ishow-order</name>
     <description>java wisdom project</description>
 
     <dependencies>
@@ -21,51 +21,6 @@
             <groupId>com.java.wisdom.group</groupId>
             <artifactId>ishow-entity</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-freemarker</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.baomidou</groupId>
-                    <artifactId>mybatis-plus-boot-starter</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.baomidou</groupId>
-                    <artifactId>mybatis-plus-generator</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>mysql</groupId>
-                    <artifactId>mysql-connector-java</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.alibaba</groupId>
-                    <artifactId>druid-spring-boot-starter</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.java.wisdom.group</groupId>
-            <artifactId>ishow-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <!--<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis-reactive</artifactId>
-        </dependency>-->
-        <!--<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>-->
-        <!-- redis依赖commons-pool 这个依赖一定要添加 -->
-        <!--<dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-pool2</artifactId>
-        </dependency>-->
-        <dependency>
-            <groupId>io.projectreactor</groupId>
-            <artifactId>reactor-test</artifactId>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -108,6 +63,7 @@
             <artifactId>spring-cloud-starter-bus-amqp</artifactId>
         </dependency>
     </dependencies>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -123,19 +79,5 @@
     <build>
         <finalName>${name}</finalName>
     </build>
-    <!--<build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                &lt;!&ndash; 屏蔽打包插件 &ndash;&gt;
-                <configuration>
-                    <skip>true</skip>
-                    &lt;!&ndash;<classifier>exec</classifier>&ndash;&gt;
-                </configuration>
-            </plugin>
-        </plugins>
-        <finalName>${name}</finalName>
-    </build>-->
 
 </project>

@@ -39,6 +39,7 @@
         <module>ishow-user-consumer</module>
         <module>ishow-common</module>
         <module>ishow-gateway</module>
+        <module>ishow-order</module>
     </modules>
 
     <build>

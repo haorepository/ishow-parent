@@ -19,11 +19,11 @@
         <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
     </properties>
     <dependencies>
-        <dependency>
+        <!--<dependency>
             <groupId>com.java.wisdom.group</groupId>
             <artifactId>ishow-cache</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
@@ -54,6 +54,10 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
         </dependency>
     </dependencies>
 
