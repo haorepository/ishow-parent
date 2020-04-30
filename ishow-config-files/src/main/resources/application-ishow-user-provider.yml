@@ -1,7 +1,7 @@
 server:
   port: 8555
-  #servlet:
-  #  context-path: /ishow-user-provider
+  servlet:
+    context-path: /ishow-user-provider
 spring:
   profiles:
     active: dev
