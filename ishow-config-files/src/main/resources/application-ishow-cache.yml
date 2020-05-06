@@ -3,8 +3,8 @@ server:
   servlet:
     context-path: /ishow-cache
 spring:
-#  profiles:
-#    active: dev
+  profiles:
+    active: dev
   application:
     name: ishow-cache
 #  rabbitmq:
