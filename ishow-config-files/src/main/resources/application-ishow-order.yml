@@ -8,7 +8,8 @@ spring:
   application:
     name: ishow-order
   rabbitmq:
-    host: 192.168.0.76
+    #host: 192.168.0.76
+    host: 119.23.44.103
     port: 5672
     username: admin
     password: admin
@@ -19,12 +20,11 @@ spring:
       trace:
         enabled: true
       enabled: true
-#      id: ${vcap.application.name:${spring.application.name:application}}:${vcap.application.instance_index:${spring.profiles.active:${local.server.port:${server.port:0}}}}:${vcap.application.instance_id:${random.value}}
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
 info:
   app:
     name: ishow-order

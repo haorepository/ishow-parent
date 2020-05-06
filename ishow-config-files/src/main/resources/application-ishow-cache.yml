@@ -3,22 +3,23 @@ server:
   servlet:
     context-path: /ishow-cache
 spring:
-  profiles:
-    active: dev
+#  profiles:
+#    active: dev
   application:
     name: ishow-cache
-  rabbitmq:
-    host: 192.168.0.76
-    port: 5672
-    username: admin
-    password: admin
-  cloud:
-    bus:
-      refresh:
-        enabled: true
-      trace:
-        enabled: true
-      enabled: true
+#  rabbitmq:
+    #host: 192.168.0.76
+#    host: 119.23.44.103
+#    port: 5672
+#    username: admin
+#    password: admin
+#  cloud:
+#    bus:
+#      refresh:
+#        enabled: true
+#      trace:
+#        enabled: true
+#      enabled: true
 info:
   app:
     name: ishow-cache

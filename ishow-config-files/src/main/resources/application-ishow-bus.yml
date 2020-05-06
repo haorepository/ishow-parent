@@ -1,12 +1,4 @@
-server:
-  port: 8444
-  servlet:
-    context-path: /ishow-user-consumer
 spring:
-  #profiles:
-    #active: dev
-  application:
-    name: ishow-user-consumer
   rabbitmq:
     #host: 192.168.0.76
     host: 119.23.44.103
@@ -20,6 +12,3 @@ spring:
       trace:
         enabled: true
       enabled: true
-info:
-  app:
-    name: ishow-user-consumer

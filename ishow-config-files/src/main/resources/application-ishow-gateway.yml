@@ -4,7 +4,8 @@ spring:
   application:
     name: ishow-gateway
   rabbitmq:
-    host: 192.168.0.76
+    #host: 192.168.0.76
+    host: 119.23.44.103
     port: 5672
     username: admin
     password: admin
