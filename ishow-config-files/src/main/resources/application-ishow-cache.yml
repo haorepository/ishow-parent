@@ -4,7 +4,7 @@ server:
     context-path: /ishow-cache
 spring:
   profiles:
-    active: dev
+    active: pro
   application:
     name: ishow-cache
 #  rabbitmq:
