@@ -16,9 +16,9 @@
     <name>ishow-common</name>
     <description>java wisdom project</description>
 
-    <properties>
+    <!--<properties>
         <java.version>1.8</java.version>
-    </properties>
+    </properties>-->
 
     <dependencies>
         <dependency>
