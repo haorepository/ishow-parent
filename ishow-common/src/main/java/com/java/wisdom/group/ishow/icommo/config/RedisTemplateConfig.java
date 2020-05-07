@@ -21,6 +21,7 @@ public class RedisTemplateConfig {
     private static final Logger LOGGER = LoggerFactory.getLogger(RedisTemplateConfig.class);
     @Bean
     public RedisTemplate<String, Object> redisTemplate(LettuceConnectionFactory factory) {
+        LOGGER.info("Icommon init redisTemplate bean");
         RedisTemplate<String, Object> template = new RedisTemplate<String, Object>();
         template.setKeySerializer(new StringRedisSerializer());
         template.setValueSerializer(new GenericJackson2JsonRedisSerializer());
