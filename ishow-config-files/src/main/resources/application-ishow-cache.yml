@@ -7,7 +7,11 @@ spring:
     active: pro
   application:
     name: ishow-cache
-#  rabbitmq:
+  security:
+    user:
+      name: admin
+      password: admin
+    #  rabbitmq:
     #host: 192.168.0.76
 #    host: 119.23.44.103
 #    port: 5672
