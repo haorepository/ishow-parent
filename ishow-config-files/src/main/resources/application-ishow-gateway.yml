@@ -17,6 +17,7 @@ spring:
         enabled: true
       enabled: true
     gateway:
+      key: gateway
       discovery:
         locator:
         enabled: false
