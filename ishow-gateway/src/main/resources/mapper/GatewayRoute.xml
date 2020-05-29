@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.java.wisdom.group.ishow.igateway.mapper.GatewayRouteMapper">
+
+    <update id="customUpdateRoute">
+        update gateway_route
+        <set>
+            <if test="route.routeId!=null">route_id = #{route.routeId},</if>
+            <if test="route.uri!=null">uri = #{route.uri},</if>
+            <if test="route.orderNum!=null">order_num = #{route.orderNum},</if>
+            <if test="route.predicates!=null">predicates = #{route.predicates},</if>
+            <if test="route.filters!=null">filters = #{route.filters},</if>
+            <if test="route.enableNum!=null">enable_num = #{route.enableNum},</if>
+            <if test="route.creater!=null">creater = #{route.creater},</if>
+            <if test="route.createTime!=null">create_time = #{route.createTime},</if>
+            <if test="route.modifier!=null">modifier = #{route.modifier},</if>
+            <if test="route.modifyTime!=null">modify_time = #{route.modifyTime},</if>
+            <if test="route.logicDelete!=null">logic_delete = #{route.logicDelete} </if>
+        </set>
+        ${ew.customSqlSegment}
+    </update>
+</mapper>

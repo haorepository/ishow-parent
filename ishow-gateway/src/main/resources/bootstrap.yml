@@ -10,7 +10,9 @@ spring:
       #如：ishow-user-provider-dev
       name:
         application-ishow-gateway,
-        application-ishow-redis
+        application-ishow-redis,
+        application-ishow-database,
+        application-ishow-mybatis-plus
       #快速返回失败，用于提前返回读取配置文件结果
       fail-fast: true
       #指定配置中心路径
