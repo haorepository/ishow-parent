@@ -19,7 +19,7 @@ public class EmailUtil {
     public static String sendEmailAccount = "2523796216@qq.com";
 
     //如果有授权码，此处填写授权码
-    public static String sendEmailPassword = "fhspjmqqtgusdicg";
+    public static String sendEmailPassword = "jqqpepoppswfeach";
 
     // 发件人邮箱的 SMTP 服务器地址, 可以登录web邮箱查询
     public static String sendEmailSMTPHost = "smtp.qq.com";
