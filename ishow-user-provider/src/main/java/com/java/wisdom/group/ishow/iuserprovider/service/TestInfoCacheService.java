@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @version: 1.0
  */
 @Component
-@FeignClient(value = "ishow-cache")
+@FeignClient(value = "ishow-cache",url = "http://admin:admin@192.168.0.73:7000")
 public interface TestInfoCacheService {
 
     @RequestMapping(value = "/ishow-cache/test-info-cache/cache",method = RequestMethod.POST)

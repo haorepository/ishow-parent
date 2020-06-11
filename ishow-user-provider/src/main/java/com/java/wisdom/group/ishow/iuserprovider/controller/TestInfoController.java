@@ -33,14 +33,18 @@ public class TestInfoController {
     @Autowired
     private TestInfoCacheService testInfoCacheService;
 
-    @RequestMapping(value = "/test-info.html",method = RequestMethod.POST)
+    @RequestMapping(value = "/test-info-cache",method = RequestMethod.POST)
+    public ResponseEntity<Boolean> cacheTestInfo(@RequestParam(value = "id") Integer id){
+        TestInfo testInfo = testInfoService.getById(1);
+        return testInfoCacheService.cacheTestInfo(testInfo);
+    }
+
+    @RequestMapping(value = "/test-info",method = RequestMethod.POST)
     public ResponseEntity<TestInfo> getTestInfo(@RequestParam(value = "id") Integer id){
         TestInfo testInfo = testInfoService.getById(1);
-        ResponseEntity<Boolean> responseEntity = testInfoCacheService.cacheTestInfo(testInfo);
-        boolean flag = responseEntity.getBody();
-        if(flag){
-            return new ResponseEntity<TestInfo>(testInfo, HttpStatus.OK);
+        if(testInfo!=null){
+            return new ResponseEntity<>(testInfo, HttpStatus.OK);
         }
-        return null;
+        return new ResponseEntity<>(new TestInfo(), HttpStatus.OK);
     }
 }
