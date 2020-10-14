@@ -18,11 +18,11 @@ eureka:
     enable-self-preservation: false
 #    eviction-interval-timer-in-ms: 3000
   instance:
-    hostname: 127.0.0.1
+    hostname: 192.168.0.73
   client:
     #关闭服务端的自我注册，如果不关闭启动报错
     fetch-registry: false
     register-with-eureka: false
     #注册中心服务地址配置
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/${server.servlet.context-path}/eureka/
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}${server.servlet.context-path}/eureka/
