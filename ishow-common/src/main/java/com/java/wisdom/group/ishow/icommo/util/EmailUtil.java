@@ -20,8 +20,8 @@ import java.util.Properties;
 public class EmailUtil {
 
     /**
-     * 邮件实体类
-     * @param email
+     * 发送邮件
+     * @param email 邮件实体类
      */
     public static void sendEmail(Email email){
         // 参数配置
